@@ -48,7 +48,7 @@
     <section class="row featured-work-detail">
         <div class="col-sm-4 one-featured-work">
             <div class="row work-image">
-                <img class="img-responsive" src="images/movie-small.jpg" alt="Movie Trailer">
+                <img class="img-responsive" src="images/movie-small.jpg" alt="Movie Trailer" data-toggle="modal" data-target="#project1">
             </div>
             <div class="row work-title text-uppercase"><h3>Movie Trailer</h3></div>
             <div class="row work-url">
@@ -57,7 +57,7 @@
         </div>
         <div class="col-sm-4 one-featured-work">
             <div class="row work-image">
-                <img class="img-responsive" src="images/portfolio-small.jpg" alt="Movie Trailer">
+                <img class="img-responsive" src="images/portfolio-small.jpg" alt="My Portfolio" data-toggle="modal" data-target="#project2">
             </div>
             <div class="row work-title text-uppercase"><h3>My Portfolio</h3></div>
             <div class="row work-url">
@@ -66,7 +66,7 @@
         </div>
         <div class="col-sm-4 one-featured-work">
             <div class="row work-image">
-                <img class="img-responsive" src="images/blog-small.jpg" alt="Movie Trailer">
+                <img class="img-responsive" src="images/blog-small.jpg" alt="Multi User Blog" data-toggle="modal" data-target="#project3">
             </div>
             <div class="row work-title text-uppercase"><h3>Multi User Blog</h3></div>
             <div class="row work-url">
@@ -86,6 +86,59 @@
         </ul>
     </div>
 </footer>
+
+<!-- Modal Start-->
+<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Movie Trailer</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="images/movie-small.jpg" alt="Movie Trailer">
+                This was my first project in this class. It was about basic understanding of python and Object Oriented programming in Python. We implemented a movie class and created instance of those classes and fetched to a page which expected a list of such instances to render a HTML page which shows the trailers of all the movies fetched
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">My Portfolio</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="images/portfolio-small.jpg" alt="My Portfolio">
+                This was my second project in this class. It was about basic understanding of HTML and CSS. We also understood about how to create a design which adapts to devices ranging from mobile phones to HD desktops. We created a portfolio page which is this one which is responsive and uses bootstrap as a framework.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Multi User Blog</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="images/blog-small.jpg" alt="Multi User Blog">
+                This was my third project in this class. It was about basic understanding of how google app engine works with usage of webapp2 framework. We created a multi user blog with implementation of all login,blog creation and like/unlike features in the blog
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal End -->
 
 </body>
 </html>
