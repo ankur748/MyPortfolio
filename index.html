@@ -9,11 +9,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
     <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
 
-    <script src="js/jquery-3.2.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
     <title>Ankur Garg - Full Stack Developer</title>
 </head>
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <body>
 
 <header class="container">
@@ -26,16 +25,16 @@
             </svg>
         </div>
         <div class="col-xs-6 profile-name text-uppercase">
-            <div class="row "><h1>Ankur Garg</h1></div>
-            <div class="row"><h3>Full Stack Developer</h3></div>
+            <h1>Ankur Garg</h1>
+            <h3>Full Stack Developer</h3>
         </div>
     </div>
 </header>
 
 <main class="container">
+
     <section class="row cover-pic">
-        <figure>
-            <!--figcaption>My Portfolio</figcaption-->
+        <figure class="col-xs-12">
             <picture>
                 <source media="(min-width: 1200px)" srcset="images/cover-large.jpg">
                 <source media="(min-width: 992px)" srcset="images/cover-medium.jpg">
@@ -44,32 +43,44 @@
             </picture>
         </figure>
     </section>
-    <section class="row featured-work"><h2>Featured Work</h2></section>
+
+    <section class="row featured-work">
+        <div class="col-xs-12">
+            <h2>Featured Work</h2>
+        </div>
+    </section>
+
     <section class="row featured-work-detail">
         <div class="col-sm-4 one-featured-work">
-            <div class="row work-image">
+            <div class="work-image">
                 <img class="img-responsive" src="images/movie-small.jpg" alt="Movie Trailer" data-toggle="modal" data-target="#project1">
             </div>
-            <div class="row work-title text-uppercase"><h3>Movie Trailer</h3></div>
-            <div class="row work-url">
+            <div class="work-title text-uppercase">
+                <h3>Movie Trailer</h3>
+            </div>
+            <div class="work-url">
                 <p><a href="https://github.com/ankur748/FavMovieTrailers">Link to Github</a></p>
             </div>
         </div>
         <div class="col-sm-4 one-featured-work">
-            <div class="row work-image">
+            <div class="work-image">
                 <img class="img-responsive" src="images/portfolio-small.jpg" alt="My Portfolio" data-toggle="modal" data-target="#project2">
             </div>
-            <div class="row work-title text-uppercase"><h3>My Portfolio</h3></div>
-            <div class="row work-url">
+            <div class="work-title text-uppercase">
+                <h3>My Portfolio</h3>
+            </div>
+            <div class="work-url">
                 <p><a href="https://github.com/ankur748/MyPortfolio">Link to Github</a></p>
             </div>
         </div>
         <div class="col-sm-4 one-featured-work">
-            <div class="row work-image">
+            <div class="work-image">
                 <img class="img-responsive" src="images/blog-small.jpg" alt="Multi User Blog" data-toggle="modal" data-target="#project3">
             </div>
-            <div class="row work-title text-uppercase"><h3>Multi User Blog</h3></div>
-            <div class="row work-url">
+            <div class="work-title text-uppercase">
+                <h3>Multi User Blog</h3>
+            </div>
+            <div class="work-url">
                 <p><a href="https://github.com/ankur748/MultiUserBlog">Link to Github</a></p>
             </div>
         </div>
@@ -78,7 +89,7 @@
 
 <footer class="container text-center">
     <div class="row">
-        <ul class="list-inline">
+        <ul class="col-xs-12 list-inline">
             <li>Contact on </li>
             <li><a class='zocial-facebook' href="http://www.facebook.com"></a></li>
             <li><a class='zocial-twitter' href="http://www.twitter.com"></a></li>
@@ -88,15 +99,15 @@
 </footer>
 
 <!-- Modal Start-->
-<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="movieTrailerModal" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Movie Trailer</h4>
+                <h4 class="modal-title" id="movieTrailerModal">Movie Trailer</h4>
             </div>
             <div class="modal-body">
                 <img class="img-responsive" src="images/movie-small.jpg" alt="Movie Trailer">
-                This was my first project in this class. It was about basic understanding of python and Object Oriented programming in Python. We implemented a movie class and created instance of those classes and fetched to a page which expected a list of such instances to render a HTML page which shows the trailers of all the movies fetched
+                <p>This was my first project in this class. It was about basic understanding of python and Object Oriented programming in Python. We implemented a movie class and created instance of those classes and fetched to a page which expected a list of such instances to render a HTML page which shows the trailers of all the movies fetched.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -105,15 +116,15 @@
     </div>
 </div>
 
-<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">My Portfolio</h4>
+                <h4 class="modal-title" id="portfolioModal">My Portfolio</h4>
             </div>
             <div class="modal-body">
                 <img class="img-responsive" src="images/portfolio-small.jpg" alt="My Portfolio">
-                This was my second project in this class. It was about basic understanding of HTML and CSS. We also understood about how to create a design which adapts to devices ranging from mobile phones to HD desktops. We created a portfolio page which is this one which is responsive and uses bootstrap as a framework.
+                <p>This was my second project in this class. It was about basic understanding of HTML and CSS. We also understood about how to create a design which adapts to devices ranging from mobile phones to HD desktops. We created a portfolio page which is this one which is responsive and uses bootstrap as a framework.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -122,15 +133,15 @@
     </div>
 </div>
 
-<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="blogModal" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Multi User Blog</h4>
+                <h4 class="modal-title" id="blogModal">Multi User Blog</h4>
             </div>
             <div class="modal-body">
                 <img class="img-responsive" src="images/blog-small.jpg" alt="Multi User Blog">
-                This was my third project in this class. It was about basic understanding of how google app engine works with usage of webapp2 framework. We created a multi user blog with implementation of all login,blog creation and like/unlike features in the blog
+                <p>This was my third project in this class. It was about basic understanding of how google app engine works with usage of webapp2 framework. We created a multi user blog with implementation of all login,blog creation and like/unlike features in the blog.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
